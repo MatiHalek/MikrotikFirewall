@@ -1,0 +1,81 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows10.0.26100.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UseWPF>true</UseWPF>
+		<PublishSingleFile>true</PublishSingleFile>
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+		<PublishTrimmed>false</PublishTrimmed>
+		<ApplicationIcon>Assets\logo.ico</ApplicationIcon>
+		<AssemblyName>Mikrotik Firewall</AssemblyName>
+		<Title>Mikrotik Firewall</Title>
+		<Version></Version>
+		<Authors>Vistaaa</Authors>
+		<Company></Company>
+		<SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
+		<Description>Simple, but powerful and easy to use Mikrotik firewall for x64 Windows</Description>
+		<Copyright>© 2025 Created by Vistaaa</Copyright>
+		<PackageProjectUrl>https://www.github.com/MatiHalek/MikrotikFirewall</PackageProjectUrl>
+		<RepositoryUrl>https://www.github.com/MatiHalek/MikrotikFirewall</RepositoryUrl>
+		<PackageIcon>logo.png</PackageIcon>
+		<AssemblyVersion>1.0.0</AssemblyVersion>
+		<FileVersion>1.0.0</FileVersion>
+		<NeutralLanguage>pl-PL</NeutralLanguage>
+		<Language>pl-PL</Language>
+		<DebugType>None</DebugType>
+		<DebugSymbols>False</DebugSymbols>
+		<ApplicationManifest>app.manifest</ApplicationManifest>
+		<Description>Simple, but powerful and easy to use Mikrotik firewall for x64 Windows</Description>
+		<Product>$(AssemblyName)</Product>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="Assets\SegoeFluentIcons.ttf" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="WPF-UI" Version="4.0.2" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+	  <Resource Include="Assets\logo.ico">
+	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+	  </Resource>
+		<Resource Include="Assets\logo.png">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Resource>
+		<Resource Include="Assets\SegoeFluentIcons.ttf">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Resource>
+	</ItemGroup>
+
+
+	<ItemGroup>
+	  <Compile Update="Properties\Resources.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Resources.resx</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+
+	<ItemGroup>
+	  <EmbeddedResource Update="Properties\Resources.resx">
+	    <Generator>ResXFileCodeGenerator</Generator>
+	    <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+	  </EmbeddedResource>
+	</ItemGroup>
+
+
+	<ItemGroup>
+	  <None Update="Assets\logo.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+
+</Project>
