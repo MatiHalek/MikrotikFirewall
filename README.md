@@ -14,4 +14,6 @@ MikrotikFirewall uses [plink](https://www.chiark.greenend.org.uk/~sgtatham/putty
 
 MikrotikFirewall runs on **64-bit versions of Windows 7 SP1, Windows 8.1, Windows 10 and Windows 11**. You may be prompted to download [.NET 8 Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) before using this app.\
 \
-You can download this tool from Releases page or, if needed, easily change the commands the program executes by modifying the code (for exmaple, in Visual Studio 2022). Instructions are provided in the code as comments.
+You can download this tool from Releases page or, if needed, easily change the commands the program executes by modifying the code (for exmaple, in Visual Studio 2022). Instructions are provided in the code as comments.\
+\
+MikrotikFirewall was created using Windows Presentation Foundation (WPF) and [WPF UI](https://wpfui.lepo.co/) library.
